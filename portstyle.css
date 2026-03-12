@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #eef2f7;
+}
+
+/* MAIN CONTAINER */
+.container {
+    display: flex;
+}
+
+/* SIDEBAR DESIGN */
+.sidebar {
+    width: 25%;
+    background: #1e272e;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #4bcffa;
+}
+
+.sidebar h2 {
+    margin-top: 10px;
+}
+
+.role {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* NAVIGATION */
+nav {
+    margin-top: 30px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #4bcffa;
+    color: black;
+}
+
+/* MAIN CONTENT AREA */
+.main {
+    margin-left: 25%;
+    padding: 30px;
+    width: 75%;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h1 {
+    margin-bottom: 10px;
+    color: #1e272e;
+}
+
+/* GRID FOR SKILLS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.box {
+    background: #1e272e;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid #4bcffa;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* LIST */
+ul {
+    margin-left: 20px;
+}
+
+li {
+    margin: 6px 0;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: gray;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .main {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
